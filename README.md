@@ -3,6 +3,7 @@
 
 ## Data
 This dataset was obtained from Kaggle. It contains annual country-level indicators related to health, economics, demographics, and public policy for 193 countries between 2000 and 2015 compiled from WHO and World Bank sources.
+Raw data is stored in data/raw and should not be modified.
 
 The target variable is **Life Expectancy at Birth**.
 
