@@ -12,3 +12,11 @@ dependencies = []
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.dependencies]
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+xgboost
