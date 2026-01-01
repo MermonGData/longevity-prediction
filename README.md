@@ -1,6 +1,10 @@
 
 # Longevity Analysis: Cross-Country Indicators (2000–2015)
 
+## Overview
+This project explores country-level indicators associated with life expectancy between 2000 and 2015.  
+The goal is to identify patterns and predictors of longevity across countries.
+
 ## Data
 This dataset was obtained from Kaggle. It contains annual country-level indicators related to health, economics, demographics, and public policy for 193 countries between 2000 and 2015 compiled from WHO and World Bank sources.
 Raw data is stored in data/raw and should not be modified.

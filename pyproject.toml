@@ -8,15 +8,15 @@ version = "0.1.0"
 description = "Longevity prediction project"
 requires-python = ">=3.9"
 readme = "README.md"
-dependencies = []
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "xgboost",
+    "pyyaml"  
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[project.dependencies]
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-xgboost
