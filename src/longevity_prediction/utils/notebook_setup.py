@@ -12,5 +12,5 @@ def get_project_root():
     return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 def resolve_project_path(*paths):
-    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
     return os.path.join(project_root, *paths)
