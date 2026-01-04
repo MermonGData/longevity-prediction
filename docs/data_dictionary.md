@@ -28,7 +28,6 @@
 
 | Variable          | Description                                                        |
 |-------------------|--------------------------------------------------------------------|
-| population        | Total population of a country                                      |
 | adult_mortality   | Adult mortality rate per 1,000 persons                             |
 | infant_deaths     | Infant mortality rate (deaths per 1,000 live births)               |
 | under_five_deaths | Number of deaths of children under 5 years of age per 1,000 births |
@@ -38,15 +37,16 @@
 
 ## Health outcomes & burden variables
 
-| Variable             | Description                                               |
-|----------------------|-----------------------------------------------------------|
-| bmi                  | Average body mass index (BMI) of the entire population    |
-| measles              | Number of reported measles cases per 1,000 people         |
-| hiv_aids             | Number of HIV/AIDS-related deaths among children          |
-| thinness_10_19_years | Prevalence of thinness among children and adolescents (%) |
-| thinness_5_9_years   | Prevalence of thinness among children, 5-9 (%)            |
+| Variable              | Description                                               |
+|-----------------------|-----------------------------------------------------------|
+| overweight_prevalence | Prevalence of overweight adults within population         |
+| measles               | Number of reported measles cases per 1,000 people         |
+| hiv_aids              | Number of HIV/AIDS-related deaths among children          |
+| thinness_10_19_years  | Prevalence of thinness among children and adolescents (%) |
+| thinness_5_9_years    | Prevalence of thinness among children, 5-9 (%)            |
 
 **Notes**
+- overweight_prevalence: overweight adults with BMI > 25, expressed as a percentage (0-100%)
 - hiv_aids: number of recorded deaths among children aged 0–4 per 1,000 live births
 - thinness_10_19_years: percentage of thinness among children and adolescents aged 10 to 19
 - thinness_5_9_years: percentage of thinness among children between aged 5 to 9
@@ -56,7 +56,7 @@
 | Variable                | Description                                                       |
 |-------------------------|-------------------------------------------------------------------|
 | total_expenditure       | Government expenditure on health as a % of total govt expenditure |
-| health_expenditure      | Expenditure on health as a percentage of GDP (%)                  |
+| percentage_expenditure  | Health expenditure per capita as a ratio of GDP per capita        |
 | hepatitis_b_vaccination | Percentage of children vaccinated against hepatitis B (HepB)      |
 | polio_vaccination       | Percentage of children vaccinated against poliomyelitis (Pol3)    |
 | diphtheria_vaccination  | Percentage of one-year-old children vaccinated against (DTP3)     |
@@ -65,6 +65,7 @@
 - Hepatitis B: measured among one-year-old children
 - Polio: measured among one-year-old children
 - Diphtheria: measured among one-year-old children vaccinated against diphtheria, tetanus and whooping cough (DTP3)
+- Percentage expenditure: An index; Values exceeding 100 indicate unit scaling differences in source data rather than a literal percentage.
 
 ## Economic and development variables
 
