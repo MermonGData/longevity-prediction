@@ -13,12 +13,40 @@ The target variable is **Life Expectancy at Birth**.
 
 A full description of all 22 variables is available in [`docs/data_dictionary.md`](docs/data_dictionary.md).
 
+## 📈 Experiment Log
+
+| Version | Model | Change Description | R² | RMSE | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **v1.0** | Linear | Baseline: basic cleaning + all features | 0.842 | 124.5 | Fixed |
+| **v1.1** | Linear | Added Log Transforms to `01_data_cleaning` | -- | -- | In Progress |
+
+## 🛠 Project Structure
+### Notebooks
+* `01_data_cleaning.ipynb`: Current best data preparation pipeline.
+* `02_modelling.ipynb`: Current best model training and evaluation.
+* `/models/`: Archive of model weights and performance metrics for every version.
+
+### Data
+- `raw/`: original dataset
+- `processed/`: cleaned dataset used for analysis
+
+### Utilities
+- `evaluation.py`: functions for evaluating model performance
+- `notebook_setup.py`: common notebook setup routines
+- `preprocessing.py`: functions for preprocessing data
+
+### Models
+
+## Setup & Requirements
+This project uses `pyproject.toml` for dependency management.
+
+* **Python:** 3.9+
+* **Environment Setup:** ```bash
+  pip install .
+
 ## Project Status / To-Do
-- README, I guess
-- Standardize variable names (currently inconsistent capitalization etc etc)
-- Clean and preprocess data for modeling
-- Perform exploratory data analysis (EDA)
+- README 
 - Feature selection and engineering
-- Model training, evaluation, and hyperparameter tuning
 - Visualizations and interpretation
-- so pretty much everything at this point
+- training models beyond the baseline
+- model evaluation and hyperparameter tuning
