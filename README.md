@@ -13,18 +13,17 @@ The target variable is **Life Expectancy at Birth**.
 
 A full description of all 22 variables is available in [`docs/data_dictionary.md`](docs/data_dictionary.md).
 
-## 📈 Experiment Log
+## Experiment Log
 
 | Version | Model | Change Description | R² | RMSE | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **v1.0** | Linear | Baseline: basic cleaning + all features | 0.842 | 124.5 | Fixed |
 | **v1.1** | Linear | Added Log Transforms to `01_data_cleaning` | -- | -- | In Progress |
 
-## 🛠 Project Structure
+## Project Structure
 ### Notebooks
 * `01_data_cleaning.ipynb`: Current best data preparation pipeline.
 * `02_modelling.ipynb`: Current best model training and evaluation.
-* `/models/`: Archive of model weights and performance metrics for every version.
 
 ### Data
 - `raw/`: original dataset
@@ -36,6 +35,7 @@ A full description of all 22 variables is available in [`docs/data_dictionary.md
 - `preprocessing.py`: functions for preprocessing data
 
 ### Models
+Archive of model weights and performance metrics for every version.
 
 ## Setup & Requirements
 This project uses `pyproject.toml` for dependency management.
@@ -44,9 +44,14 @@ This project uses `pyproject.toml` for dependency management.
 * **Environment Setup:** ```bash
   pip install .
 
-## Project Status / To-Do
-- README 
-- Feature selection and engineering
-- Visualizations and interpretation
-- training models beyond the baseline
-- model evaluation and hyperparameter tuning
+## Project Status 
+**Done**
+- Baseline Establishment (v1.0)
+- Multi-model Benchmarking (Initial Search)
+
+To-Do
+- Reliability Audit (Leakage check, Cross-validation)
+- Feature Refinement (Log-transforms, encoding 'country' etc)
+- Optimization (Hyperparameter tuning)
+- Interpretation/visuals
+- completing README
