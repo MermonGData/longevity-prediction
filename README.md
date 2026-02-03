@@ -1,5 +1,6 @@
 
 # Longevity Analysis: Cross-Country Indicators (2000–2015)
+**WORK IN PROGRESS**
 
 ## Overview
 This project explores country-level indicators associated with life expectancy between 2000 and 2015.  
@@ -22,12 +23,14 @@ A full description of all 22 variables is available in [`docs/data_dictionary.md
 
 ## Project Structure
 ### Notebooks
-* `01_data_cleaning.ipynb`: Current best data preparation pipeline.
+* `01_data_cleaning.ipynb`: Handles missing data imputation, outlier detection, and feature engineering (log-scaling/selection).
 * `02_modelling.ipynb`: Current best model training and evaluation.
 
 ### Data
-- `raw/`: original dataset
-- `processed/`: cleaned dataset used for analysis
+- `raw/`: Original WHO dataset as downloaded.
+- `processed/`:
+    - `life_expectancy_cleaned.csv`: Cleaned data with handled missing values and corrected types (post-imputation).
+    - `life_expectancy_engineered.csv`: Version with log-transformed features and removed multicollinearity; optimized for linear modeling.
 
 ### Utilities
 - `evaluation.py`: functions for evaluating model performance
@@ -49,9 +52,8 @@ This project uses `pyproject.toml` for dependency management.
 - Baseline Establishment (v1.0)
 - Multi-model Benchmarking (Initial Search)
 
-To-Do
-- Reliability Audit (Leakage check, Cross-validation)
-- Feature Refinement (Log-transforms, encoding 'country' etc)
+**To-Do**
+- Feature Refinement (encoding 'country' etc)
 - Optimization (Hyperparameter tuning)
 - Interpretation/visuals
 - completing README
