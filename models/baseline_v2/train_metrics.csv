@@ -1,0 +1,8 @@
+Metric,Value
+MSE,11.7732
+RMSE,3.4312
+MAE,2.5061
+MAPE [%],3.8002
+RMSPE [%],5.6067
+R²,0.8716
+Pearson correlation,0.9336

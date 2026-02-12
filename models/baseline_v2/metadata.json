@@ -1,0 +1,24 @@
+{
+    "version": "baseline_v2",
+    "date": "2026-02-11T23:43:55.169795",
+    "model_type": "LinearRegression",
+    "features": [
+        "year",
+        "adult_mortality",
+        "infant_deaths",
+        "alcohol",
+        "percentage_expenditure",
+        "hepatitis_b_vaccination",
+        "measles",
+        "overweight_prevalence",
+        "polio_vaccination",
+        "total_expenditure",
+        "diphtheria_vaccination",
+        "hiv_aids",
+        "gdp",
+        "thinness_5_9_years",
+        "income_composition_of_resources",
+        "schooling",
+        "is_developed"
+    ]
+}
