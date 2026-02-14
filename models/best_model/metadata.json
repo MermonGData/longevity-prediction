@@ -1,0 +1,24 @@
+{
+    "version": "best_model",
+    "date": "2026-02-14T18:09:01.992534",
+    "model_type": "RandomForestRegressor",
+    "features": [
+        "year",
+        "adult_mortality",
+        "infant_deaths",
+        "alcohol",
+        "percentage_expenditure",
+        "hepatitis_b_vaccination",
+        "measles",
+        "overweight_prevalence",
+        "polio_vaccination",
+        "total_expenditure",
+        "diphtheria_vaccination",
+        "hiv_aids",
+        "gdp",
+        "thinness_5_9_years",
+        "income_composition_of_resources",
+        "schooling",
+        "is_developed"
+    ]
+}

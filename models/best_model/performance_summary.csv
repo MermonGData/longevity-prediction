@@ -1,0 +1,8 @@
+Metric,Value,model_name
+MSE,2.6784,RandomForest
+RMSE,1.6366,RandomForest
+MAE,1.0374,RandomForest
+MAPE [%],1.5683,RandomForest
+RMSPE [%],2.561,RandomForest
+R²,0.969,RandomForest
+Pearson correlation,0.9845,RandomForest
