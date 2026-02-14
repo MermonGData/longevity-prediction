@@ -1,0 +1,36 @@
+,Metric,Value,model_name
+0,MSE,11.9447,Ridge
+1,RMSE,3.4561,Ridge
+2,MAE,2.5762,Ridge
+3,MAPE [%],3.8819,Ridge
+4,RMSPE [%],5.5234,Ridge
+5,R²,0.8619,Ridge
+6,Pearson correlation,0.9286,Ridge
+7,MSE,15.742,Lasso
+8,RMSE,3.9676,Lasso
+9,MAE,3.0069,Lasso
+10,MAPE [%],4.5497,Lasso
+11,RMSPE [%],6.3412,Lasso
+12,R²,0.818,Lasso
+13,Pearson correlation,0.9066,Lasso
+14,MSE,2.6784,RandomForest
+15,RMSE,1.6366,RandomForest
+16,MAE,1.0374,RandomForest
+17,MAPE [%],1.5683,RandomForest
+18,RMSPE [%],2.561,RandomForest
+19,R²,0.969,RandomForest
+20,Pearson correlation,0.9845,RandomForest
+21,MSE,2.8477,XGBoost
+22,RMSE,1.6875,XGBoost
+23,MAE,1.103,XGBoost
+24,MAPE [%],1.6519,XGBoost
+25,RMSPE [%],2.5855,XGBoost
+26,R²,0.9671,XGBoost
+27,Pearson correlation,0.9835,XGBoost
+28,MSE,4.4141,GBR
+29,RMSE,2.101,GBR
+30,MAE,1.4693,GBR
+31,MAPE [%],2.1793,GBR
+32,RMSPE [%],3.1841,GBR
+33,R²,0.949,GBR
+34,Pearson correlation,0.9742,GBR
