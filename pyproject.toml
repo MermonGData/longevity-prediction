@@ -17,6 +17,6 @@ dependencies = [
     "xgboost",
     "pyyaml"  
 ]
-
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["ml_core_utils"]
+package-dir = {"ml_core_utils" = "ml_core_utils"}
