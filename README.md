@@ -43,7 +43,7 @@ Archive of model weights and performance metrics for every version.
 ## Setup & Requirements
 This project uses `pyproject.toml` for dependency management.
 
-* **Python:** 3.9+
+* **Python:** 3.12+
 * **Environment Setup:** ```bash
   pip install .
 
