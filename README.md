@@ -15,11 +15,14 @@ A full description of all 22 variables is available in [`docs/data_dictionary.md
 
 ## Experiment Log
 
-| Phase | Model | Key Activity | R²  | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Baseline | Linear | Baseline: basic cleaning + all features | 0.842 | Completed |
-| Benchmarking | Random Forest | First multi-model test; RF best but unstable | 0.969 | Completed |
-| Refinement | All | Added Log Transforms to `01_preprocessing_and_eda`; re-evaluated models | -- | -- | Current |
+| Phase | Model | Key Activity | R²  |
+| :--- | :--- | :--- | :--- | :--- |
+| Baseline | Linear | Baseline: basic cleaning + all features | 0.842 | 
+| Benchmarking | Random Forest | First multi-model test; RF best but unstable | 0.969 | 
+| Refinement | All | Log Transforms; improved CV stability | 0.969 | 
+| Validation | Random Forest | Temporal Split (2013 threshold) | 0.969 | 
+| Robustness | Random Forest | Feature Ablation: Removing Mortality proxies | TBD |
+
 
 ## Project Structure
 ### Notebooks
