@@ -1,6 +1,6 @@
 {
     "version": "best_model",
-    "date": "2026-02-14T18:09:01.992534",
+    "date": "2026-03-14T16:38:59.340969",
     "model_type": "RandomForestRegressor",
     "features": [
         "year",
