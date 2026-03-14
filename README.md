@@ -17,11 +17,11 @@ A full description of all 22 variables is available in [`docs/data_dictionary.md
 
 | Phase | Model | Key Activity | R²  |
 | :--- | :--- | :--- | :--- | :--- |
-| Baseline | Linear | Baseline: basic cleaning + all features | 0.842 | 
-| Benchmarking | Random Forest | First multi-model test; RF best but unstable | 0.969 | 
-| Refinement | All | Log Transforms; improved CV stability | 0.969 | 
-| Validation | Random Forest | Temporal Split (2013 threshold) | 0.969 | 
-| Robustness | Random Forest | Feature Ablation: Removing Mortality proxies | TBD |
+| Baseline | Linear | Baseline: basic cleaning + all features | 0.842 |
+| Benchmarking | Random Forest | First multi-model test; RF best but unstable | 0.969 |
+| Refinement | All | Log Transforms; improved CV stability | 0.969 |
+| Validation | Random Forest | Temporal Split (2013 threshold) | 0.969 |
+| Robustness | Random Forest | Feature Ablation: Removing Mortality proxies | 0.901 |
 
 
 ## Project Structure
@@ -63,8 +63,11 @@ pip install .
 - Multi-model Benchmarking: identified Random Forest as top performer.
 - Feature Engineering: Implemented log-transforms for skewed indicators in 01_eda_and_preprocessing.ipynb.
 - Architecture Refactor: Abstracted core logic into ml-core-utils submodule and implemented persistence.py for model tracking.
+- Switch to temporal train/test splitting
+- Model audit: feature importance, train vs test gap, ablation test
 
 **To-Do**
-- Feature Refinement (encoding 'country' etc)
+- Residuals distribution check
+- Outlier deep dive
 - Optimization (Hyperparameter tuning)
 - Interpretation/visuals
