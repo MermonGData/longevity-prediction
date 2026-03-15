@@ -56,6 +56,7 @@ This project uses `pyproject.toml` for dependency management.
 ```bash
 git clone --recursive https://github.com/MermonGData/longevity-prediction
 pip install .
+```
 
 ## Project Status 
 **Done**
