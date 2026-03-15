@@ -16,7 +16,7 @@ A full description of all 22 variables is available in [`docs/data_dictionary.md
 ## Experiment Log
 
 | Phase | Model | Key Activity | R²  |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | Baseline | Linear | Baseline: basic cleaning + all features | 0.842 |
 | Benchmarking | Random Forest | First multi-model test; RF best but unstable | 0.969 |
 | Refinement | All | Log Transforms; improved CV stability | 0.969 |
